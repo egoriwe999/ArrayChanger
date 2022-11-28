@@ -33,7 +33,7 @@ int main(){
                                 printf("Error! Size must be > 0");;
                         }
                         else{
-                                arr = input(&n);
+                                arr = input(&n,arr);
                                 output(arr,n);
                         }
                         break;
@@ -89,13 +89,13 @@ int main(){
                 case 5:
 
                 printf("Program is finished\n");
+                free(arr);
                 return 0;
 
                 default:
                         printf("You have a mistake, repeat please:\n");
                 }
         }
-        free(arr);
 }
 // egoriwe999
                         
