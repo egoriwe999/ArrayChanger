@@ -1,4 +1,4 @@
-int* input(int* n); // вввод массива
+int* input(int* n, int* arr); // вввод массива
 void output(int* arr,int n); // вывод массива
 void remove_array(int* arr, int* n,int dx); // удаление элемента в массиве
 void insert(int** arr,int* n, int ix, int dx); // вставка нового элемента в массив
