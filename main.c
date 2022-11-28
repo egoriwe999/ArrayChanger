@@ -3,7 +3,7 @@
 #include"f2.h"
 
 int main(){
-        int *arr; // первый массив
+        int *arr = NULL; // первый массив
         int *arr2; // второй массив , который в итоге чистим сразу
         int n2=0; // размер второго массива
         int n=0; // размер первого массива
@@ -24,6 +24,9 @@ int main(){
                 }
                 switch(menu){
                 case 1:
+                        if(arr!=NULL){
+                                free(arr);
+                        }
                         printf("Print size:\n");
                         scanf("%d/n", &n);
                         if(n<=0 || getchar()!='\n'){
